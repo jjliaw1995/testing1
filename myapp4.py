@@ -11,7 +11,7 @@ This app predicts the **Customer Scoring** !
 
 st.sidebar.header('Customer')
 
-wine = pd.read_csv("/content/sample_data/wine_new.csv")
+wine = pd.read_csv("wine_new.csv")
 print(wine.describe(include='all'))
 
 def user_input_features():
