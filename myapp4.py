@@ -4,12 +4,12 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Customer Scoring Prediction App
+# Wine type Prediction App
 
-This app predicts the **Customer Scoring** !
+This app predicts the **Wine Type** !
 """)
 
-st.sidebar.header('Customer')
+st.sidebar.header('Wine')
 
 wine = pd.read_csv("wine_new.csv")
 print(wine.describe(include='all'))
@@ -49,9 +49,3 @@ st.write(prediction_proba)
 
 st.subheader('User Input parameters')
 st.write(df)
-
-st.subheader('Class labels and their corresponding index number')
-st.write(['1' '2' '3'])
-
-st.subheader('Prediction')
-st.write([prediction])
